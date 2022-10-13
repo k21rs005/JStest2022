@@ -24,7 +24,33 @@
             var a = 0;
             var txt = "";
             txt += "a: " + a + "<br>";
+            if (a = 1) {
+                txt += "TRUE<br>";
+            } else {
+                txt += "FALSE<br>";
+            }
+            txt += "a: " + a + "<br>"; 
+            
             $("#disp2").html(txt);
+
+            var a = new Array(3);
+            let c = [10, 50, 30];
+
+            c.push(40);
+            c.unshift(0);
+            let msg="";
+            for(let i=0; i<c.length; i++){
+                msg += i + ":" +
+                c[i] + "<br>";
+            }
+            $("#disp1").html(msg);
+
+            var b = [100, 20, -5];
+            var msg_2 = "";
+            for(let i=0; i<b.length; i++){
+                msg += i + ":" + b[i] + "<br>";
+            }
+            $("#disp2").html(msg);
         }
     </script>
 </head>
